@@ -1,6 +1,6 @@
 Name:           maven2
 Version:        2.2.1
-Release:        46%{?dist}
+Release:        47%{?dist}
 Summary:        Java project management and project comprehension tool
 License:        ASL 2.0 and MIT and BSD
 URL:            http://maven.apache.org
@@ -189,6 +189,9 @@ sed -i s/edu.emory.mathcs.backport.// `find -name DefaultArtifactResolver.java`
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.2.1-47
+- Mass rebuild 2013-12-27
+
 * Tue Oct  8 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 2.2.1-46
 - Migrate from mvn-rpmbuild to %%mvn_build
 
